@@ -1,0 +1,15 @@
+nav{
+    background-color: #424242;
+}
+.logo
+{
+    color: #fff;
+    font-size: 1.5em;
+}
+ul.nav a{
+    background-color: aliceblue;
+}
+ul.nav a:hover
+{
+    background-color: #616161;
+}

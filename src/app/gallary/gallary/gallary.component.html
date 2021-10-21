@@ -1,0 +1,18 @@
+<div class="container" style="margin-top: 60px;">
+    <div class="row">
+        <div>
+            <button class="btn btn-lg btn-info" (click)="filterBy='all'">Все</button>
+            <button class="btn btn-lg btn-info" (click)="filterBy='vanGog'">Ван Гог</button>
+            <button class="btn btn-lg btn-info" (click)="filterBy='aivaz'">Айвазовский</button>
+            <button class="btn btn-lg btn-info" (click)="filterBy='popov'">Попов</button>
+        </div>
+        <ul id="list" >
+            <li *ngFor="let item of (visibleImages | imageFilter:filterBy)">
+                <a href="" [routerLink]="['/image',item.id]">
+                    <img src="{{item.url}}" alt="" class="tn" width="200px" height="200px">
+                </a>
+                
+            </li>
+        </ul>
+    </div>
+</div>
